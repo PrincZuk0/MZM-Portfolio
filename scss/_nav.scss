@@ -1,0 +1,20 @@
+.top-nav {
+    display:flex;
+    background: white;
+    border: 1px solid cyan;
+
+    .initals{
+        color:cyan;
+        text-align: center;
+    }
+
+    .nav-item{
+        color:black;
+        text-align: center;
+        text-decoration: none;
+    }
+    .nav-item:hover{
+        text-decoration: underline;
+        text-decoration-color: cyan;
+}
+}
