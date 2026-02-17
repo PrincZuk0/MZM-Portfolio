@@ -1,9 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
-            margin:0;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
 }
 
 * {
     box-sizing: border-box;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .container {
@@ -14,17 +25,17 @@ padding-left: 15px;
 
 
     @media (min-width: $bp-small){
-width: $cont-tablet;
+width: $cont-mobile;
 
     }
 
     @media (min-width: $bp-medium){
-width: $cont-desktop;
+width: $cont-tablet;
 
     }
 
     @media (min-width: $bp-large){
-width: $cont-wide;
+width: $cont-desktop;
 
     }
 
@@ -42,3 +53,46 @@ width: $cont-wide;
     text-decoration: underline;
   }
 }
+.back-to-top {
+  position: absolute;   
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-decoration: none;
+  color: black;
+}
+  .scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-decoration: none;
+  }
+
+  .generic-content {
+  display:flex;
+  margin-top: 50px;      // space from banner
+  margin-left: 30px;     // space from navbar
+  margin-right: 30px;
+  margin-bottom: 80px;
+  flex-direction: column;
+  }
+
+  .keyboard-arrow-down{
+  width: 16px;
+  height: 16px;
+  fill: white;
+  }
+
+  .keyboard-arrow-up{
+  width: 16px;
+  height: 16px;
+  fill: black;
+  }
+

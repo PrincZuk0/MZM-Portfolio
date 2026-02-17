@@ -1,20 +1,87 @@
 .top-nav {
     display:flex;
-    background: white;
-    border: 1px solid cyan;
+    flex-direction:column;
+    top:0;
+    left:0;
+    align-items: stretch;
+    padding: 0; 
+    background: rgb(254, 254, 254);
+    border-right:4px solid $my-blue;
+   
 
-    .initals{
-        color:cyan;
-        text-align: center;
+.initals{
+    color: $my-blue;
+    text-align: center;
+    border-bottom: 3px solid $my-blue;
+
+    width: 100%;
+    aspect-ratio: 1/1;
+
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+}
+
+    .top-nav .nav-item{
+        display: none;
+    }
+    
+.burger {
+  width: 30px;
+  height: 22px;
+  margin: 15px auto;  // centers it
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  height: 2px;
+  background: $my-blue;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+@media (min-width:$bp-medium){
+    body{
+        display:flex;
+    }
+    .top-nav {
+        width: 250px;
+        height: 100vh;
+
+        position: sticky;
+        top: 0;
     }
 
-    .nav-item{
+        .burger{
+            display: none;
+        }
+
+        .top-nav .nav-item{
+        display:block;
         color:black;
         text-align: center;
         text-decoration: none;
+        padding: 15px;
+    
+        &:hover{
+            text-decoration: underline;
+            text-decoration-color: $my-blue;
+            text-underline-offset: 6px;
+            text-decoration-thickness: 2px; 
+            }
+        }
+                .border{
+            border-top: 3px solid $my-blue;
+            border-bottom: 3px solid $my-blue;
+        }
+    .page-content{
+        flex:1;
     }
-    .nav-item:hover{
-        text-decoration: underline;
-        text-decoration-color: cyan;
-}
 }

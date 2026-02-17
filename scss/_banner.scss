@@ -1,1 +1,14 @@
-asx
+.banner{
+      background-image:
+    url('../images/bannerphoto.avif');
+    background-size:cover;
+     height: 100vh;
+       display: flex;              
+  justify-content: center;    
+  align-items: center;
+  position: relative;
+}
+.banner-content{
+  color: white;
+  text-align: center;
+}

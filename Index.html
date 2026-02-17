@@ -3,41 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>MZM Portfolio</title>
 </head>
 
-<body>
+<body id="top">
 
     <nav class = 'top-nav'>
-        
+
         <div class = 'initals'>MZM</div>
-<a href="#" class="nav-item">
+        <div class="burger" id="burger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<a href="About Me.html" class="nav-item">
       <span>About Me</span>
     </a>
-<a href="#" class="nav-item">
+<a href="#projects" class="nav-item">
       <span>My Portfolio</span>
     </a>
-<a href="#" class="nav-item">
+<a href="Coding Examples.html" class="nav-item">
       <span>Coding Examples</span>
     </a>
-<a href="#" class="nav-item">
+<a href="SCS Scheme.html" class="nav-item">
       <span>SCS Schemes</span>
     </a>
-<a href="#" class="nav-item">
+<a href="#contact" class="nav-item border">
       <span>Contact Me</span>
     </a>
-
-    </div>
+        
 </nav>
+    <main class="page-content">
     <div class="banner">
         <div class="banner-content">
-        <h1>My name is Zaid Miah</h1>
+          <a href="#projects" class="scroll-down">Scroll Down <br>        
+            <svg class="keyboard-arrow-down" viewBox="0 0 24 24">
+          <path d="M7.406 8.578l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z">
+          </path>
+        </svg>
+      </a>
+        <h1>My Name is Zaid Miah</h1>
         <p>I'm a Web Developer</p>
         </div>
     </div>
 
+      <section class="projects" id="projects">
 
+  <div class="project-grid">
+        <img src="images/projects/Project-1.png" alt="Project 1">
+      <h2 class="project-title">
+        Project 1
+      </h2>
+      <p class="project-description">Furniture
+        <svg class="icon arrow_forward" viewBox="0 0 24 24">
+          <path d="M12 3.984l8.016 8.016-8.016 8.016-1.406-1.406 5.578-5.625h-12.188v-1.969h12.188l-5.578-5.625z">
+          </path>
+        </svg>
+      </p>
+    </div>
 
-    <footer></footer>
+    <div class="project-grid">
+        <img src="images/projects/Project-2.png" alt="Project 2">
+      <h2 class="project-title">
+        Project 2
+      </h2>
+      <p class="project-description">Meditation
+        <svg class="icon arrow_forward" viewBox="0 0 24 24">
+          <path d="M12 3.984l8.016 8.016-8.016 8.016-1.406-1.406 5.578-5.625h-12.188v-1.969h12.188l-5.578-5.625z">
+          </path>
+        </svg>
+      </p>
+
+    </div>
+  
+    <div class="project-grid">
+            <img src="images/projects/Project-3.png" alt="Project 3">
+      <h2 class="project-title">
+        Project 3
+      </h2>
+      <p class="project-description">Hair Studio
+        <svg class="icon arrow_forward" viewBox="0 0 24 24">
+          <path d="M12 3.984l8.016 8.016-8.016 8.016-1.406-1.406 5.578-5.625h-12.188v-1.969h12.188l-5.578-5.625z">
+          </path>
+        </svg>
+      </p>
+    </div>
+
+    <div class="project-grid">
+            <img src="images/projects/Project-4.png" alt="Project 4">
+      <h2 class="project-title">
+        Project 4
+      </h2>
+      <p class="project-description">Energy Saving
+        <svg class="icon arrow_forward" viewBox="0 0 24 24">
+          <path d="M12 3.984l8.016 8.016-8.016 8.016-1.406-1.406 5.578-5.625h-12.188v-1.969h12.188l-5.578-5.625z">
+          </path>
+        </svg>
+      </p>
+    </div>
+
+    <div class="project-grid">
+            <img src="images/projects/Project-5.png" alt="Project 5">
+      <h2 class="project-title">
+        Project 5
+      </h2>
+      <p class="project-description">Food & Cooking
+        <svg class="icon arrow_forward" viewBox="0 0 24 24">
+          <path d="M12 3.984l8.016 8.016-8.016 8.016-1.406-1.406 5.578-5.625h-12.188v-1.969h12.188l-5.578-5.625z">
+          </path>
+        </svg>
+      </p>
+    </div>
+
+    <div class="project-grid">
+            <img src="images/projects/Project-6.png" alt="Project 6">
+                <h2 class="project-title">Project 6
+            </h2>
+                <p class="project-description">Movies
+                <svg class="icon arrow_forward" viewBox="0 0 24 24">
+          <path d="M12 3.984l8.016 8.016-8.016 8.016-1.406-1.406 5.578-5.625h-12.188v-1.969h12.188l-5.578-5.625z">
+          </path>
+        </svg></p>
+    </div>
+
+</section>
+  <section id="contact">
+  <div class="form-layout">
+    <div class="form-info">
+        <h2>Get In Touch</h2>
+        <p>Have a project in mind or just want to connect?
+            I&apos;m always open to discussing new opportunities. Send me a message and I&apos;ll get back to you soon.</p>
+        <h2>Let&apos;s Make It Happen</h2>
+        <p>Whether you have a project in mind or just want to say hello,
+            feel free to reach out. I&apos;m always excited to collaborate on meaningful digital experiences.</p>
+        </div>
+        
+        <form class="form-content">
+            <div class="name-row">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Message"></textarea>
+                <button class="button">Submit</button>
+    </form>
+    </section>
+    <a href="#top" class="back-to-top"><svg class="keyboard-arrow-up" viewBox="0 0 24 24">
+          <path d="M7.406 15.422l-1.406-1.406 6-6 6 6-1.406 1.406-4.594-4.594z">
+          </path>
+        </svg><span>Back To Top</span></a>
+    </main>
 </body>
 </html>
