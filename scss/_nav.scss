@@ -5,7 +5,7 @@
     left:0;
     align-items: stretch;
     padding: 0; 
-    background: rgb(254, 254, 254);
+    background: white;
     border-right:4px solid $my-blue;
    
 
@@ -15,7 +15,7 @@
     border-bottom: 3px solid $my-blue;
 
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1;      //makes initals square            
 
 
     display:flex;
@@ -44,7 +44,7 @@
   height: 2px;
   background: $my-blue;
   border-radius: 2px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; //animate every property that changes
 }
 
 @media (min-width:$bp-medium){
@@ -53,14 +53,14 @@
     }
     .top-nav {
         width: 250px;
-        height: 100vh;
+        height: 100vh;  //exactly the hieght of the viewpoint
 
-        position: sticky;
+        position: sticky; ///sticks within parent stops when parent ends
         top: 0;
     }
 
         .burger{
-            display: none;
+            display: none; //hide burger on desktop
         }
 
         .top-nav .nav-item{

@@ -9,12 +9,12 @@
   margin-bottom: 80px; 
 }
 
-.project-grid {
-position:relative;
-overflow:hidden;
-cursor: pointer;
-transition: 0.3s ease;
-flex: 0 0 100%;
+.project-grid {               //the projects
+  position:relative;
+  overflow:hidden;              //keeps card together
+  cursor: pointer;
+  transition: 0.3s ease;
+  flex: 0 0 100%;               //flex grow, width, basis take full container width
 }
 
 .project-description, .project-title {
@@ -25,27 +25,27 @@ flex: 0 0 100%;
   transition: 0.3s ease;
 }
 
-.project-grid:hover img {
+.project-grid:hover img {                   //for the shadow effect
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   filter: brightness(85%);
 }
 
-.project-grid:hover .project-title, .project-grid:hover .project-description {
+.project-grid:hover .project-title, .project-grid:hover .project-description {   //text opacity
   opacity: 0.5;
 }
 
-.project-grid img {
+.project-grid img {       //makes picture darker
   width: 100%;
   height: auto;
   display: block;
   filter: brightness(80%);
 }
 
-.project-title {
+.project-title {        //gap between pic and title
   margin: 8px 0 0 0;
 }
 
-.project-description {
+.project-description {    //gap between description and title
   display: inline-flex;
   align-items: center;
   gap: 6px;   
@@ -54,12 +54,12 @@ flex: 0 0 100%;
 
 @media (min-width: $bp-medium) {
   .projects {
-    flex-direction: row;
+    flex-direction: row;      
     flex-wrap: wrap;
   }
 
   .project-grid {
-    flex: 0 0 calc(33.333% - 14px);
+    flex: 0 0 calc(33.333% - 14px);  //references the flexbox to fit three cards in a row
   }
 }
 .arrow_forward {
